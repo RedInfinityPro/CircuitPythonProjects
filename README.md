@@ -7,7 +7,7 @@ This Python script uses PySpice to simulate circuits powered by Ngspice. It impo
 - [About](#about)
 - [Features](#features)
 - [Imports](#Imports)
-- [Rating: 7/10](#Rating)
+- [Rating: 4/10](#Rating)
 
 # About
 
@@ -25,4 +25,6 @@ numpy, matplotlib, sys, os, PySpice PySpice.Logging.Logging, PySpice.Spice.Netli
 
 # Rating
 
-Indicating a well-structured and effective tool. However, there is room for improvement in code clarity and documentation, with the addition of comments for better understanding of each section and variable, and enhanced error handling for better robustness.
+The PySpice library is a useful tool for creating and simulating simple electronic circuits, covering voltage dividers, diodes, raw SPICE, subcircuits, and basic and custom DC sweeps. The code is organized into sections for different types of circuits, making it easy to understand. However, it has some cons, such as code duplication, lack of functions/classes, and inability to visualize results using plots or graphs.
+Code duplication occurs when the instantiation of the `Circuit` object and setting up the simulator are repeated multiple times. The code lacks abstraction, which could be improved by encapsulating common operations into functions or classes. Variable names are not descriptive, making it difficult to understand their purpose without context. Error handling mechanisms, such as try-except blocks, are not implemented, and the code lacks visualization.
+To improve, the code should be refactored to eliminate redundant sections, encapsulate repetitive operations into functions or classes, use descriptive variable and function names, implement error handling mechanisms, and incorporate visualization functionality to better understand circuit behavior and performance.
